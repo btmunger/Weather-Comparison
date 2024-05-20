@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Comparison</title>
+        <link rel="stylesheet" type="text/css" href="weather.css">
+        <script src="weather.js"></script>
+    </head>
+    <body>
+        <main>
+        <header>
+            <h1>Weather Comparison</h1>
+        </header>
+
+        <div>
+            <div>
+                <p class = "inline-l1">Location 1: </p>
+                <label class = "inline-l1" for="City1">City:</label>
+                <input class = "inline-l1" type="text" id="City1" City1="City1"> 
+                <p class = "inline-l1" id = "noCityWarning1"></p>  
+                <label class = "inline-l1" for="State1">State:</label> 
+                <select class = "inline-l1" name="State1" id="State1">
+                    <option value="">Select a state</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>  
+                <p class = "inline-l1" id = "noStateWarning1"></p> 
+            </div>
+            <div>
+                <p class = "inline-l2">Location 2: </p>
+                <label class = "inline-l2" for="City2">City:</label>
+                <input class = "inline-l2" type="text" id="City2" City2="City2"> 
+                <p class = "inline-l2" id = "noCityWarning2"></p>   
+                <label class = "inline-l2" for="State2">State:</label>
+                <select class = "inline-l2" name="State2" id="State2">
+                    <option value="">Select a state</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select> 
+                <p class = "inline-l1" id = "noStateWarning2"></p> 
+            </div>
+            <div>
+                <input type="radio" id="fahren" name="temp" value="f_selected" checked>
+                <label for="fahren">Fahrenheit</label>
+
+                <input type="radio" id="celsius" name="temp" value="c_selected">
+                <label for="celsius">Celsius</label>
+            </div>
+            <div>
+                <input type="button" id="compareButton" value="Compare">
+            </div>
+            <div>
+                <h2 id = "5dayheader"></h2>
+            </div>
+            <div>
+                <h3 id = "city1nameheader"></h3>
+                <table id = "table1" hidden>
+                    <tr class = "row-odd">
+                        <td class = "tableheader">Day</td>
+                        <td id = "1day1"></td>
+                        <td id = "1day2"></td>
+                        <td id = "1day3"></td>
+                        <td id = "1day4"></td>
+                        <td id = "1day5"></td>
+                    </tr>
+                    <tr class = "row-even">
+                        <td class = "tableheader">High</td>
+                        <td id = "1high1"></td>
+                        <td id = "1high2"></td>
+                        <td id = "1high3"></td>
+                        <td id = "1high4"></td>
+                        <td id = "1high5"></td>
+                    </tr>
+                    <tr class = "row-odd">
+                        <td class = "tableheader">Low</td>
+                        <td id = "1low1"></td>
+                        <td id = "1low2"></td>
+                        <td id = "1low3"></td>
+                        <td id = "1low4"></td>
+                        <td id = "1low5"></td>
+                    </tr>
+                    <tr class = "row-even">
+                        <td class = "tableheader">Rain</td>
+                        <td id = "1rain1"></td>
+                        <td id = "1rain2"></td>
+                        <td id = "1rain3"></td>
+                        <td id = "1rain4"></td>
+                        <td id = "1rain5"></td>
+                    </tr>
+                    <tr class = "row-odd">
+                        <td class = "tableheader">Outlook</td>
+                        <td><img id = 1outlook1 ></a></td>
+                        <td><img id = 1outlook2 ></a></td>
+                        <td><img id = 1outlook3 ></a></td>
+                        <td><img id = 1outlook4 ></a></td>
+                        <td><img id = 1outlook5 ></a></td>
+                    </tr>
+                </table>
+                <p id = "noCityTxt1"></p>
+            </div>
+            <div>
+                <h3 id = "city2nameheader"></h3>
+                <table>
+                    <table id = "table2" hidden>
+                        <tr class = "row-odd">
+                            <td class = "tableheader">Day</td>
+                            <td id = "2day1"></td>
+                            <td id = "2day2"></td>
+                            <td id = "2day3"></td>
+                            <td id = "2day4"></td>
+                            <td id = "2day5"></td>
+                        </tr>
+                        <tr class = "row-even">
+                            <td class = "tableheader">High</td>
+                            <td id = "2high1"></td>
+                            <td id = "2high2"></td>
+                            <td id = "2high3"></td>
+                            <td id = "2high4"></td>
+                            <td id = "2high5"></td>
+                        </tr>
+                        <tr class = "row-odd">
+                            <td class = "tableheader">Low</td>
+                            <td id = "2low1"></td>
+                            <td id = "2low2"></td>
+                            <td id = "2low3"></td>
+                            <td id = "2low4"></td>
+                            <td id = "2low5"></td>
+                        </tr>
+                        <tr class = "row-even">
+                            <td class = "tableheader">Rain</td>
+                            <td id = "2rain1"></td>
+                            <td id = "2rain2"></td>
+                            <td id = "2rain3"></td>
+                            <td id = "2rain4"></td>
+                            <td id = "2rain5"></td>
+                        </tr>
+                        <tr class = "row-odd">
+                            <td class = "tableheader">Outlook</td>
+                            <td><img id = 2outlook1 ></img></td>
+                            <td><img id = 2outlook2 ></img></td>
+                            <td><img id = 2outlook3 ></img></td>
+                            <td><img id = 2outlook4 ></img></td>
+                            <td><img id = 2outlook5 ></img></td>
+                        </tr>
+                    </table>
+                    <p id = "noCityTxt2"></p>
+                </table>
+            </div>
+        </div>
+
+        </main>
+        <footer>
+            By Brian Munger 5/20/2024
+        </footer>
+    </body>
+</html> 

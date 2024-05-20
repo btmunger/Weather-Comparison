@@ -1,0 +1,68 @@
+body {
+    background-color: lightblue;
+}
+
+div {
+    margin: 10px;
+}
+
+header, footer {
+    background-color: rgb(74, 144, 167);
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    font-style: italic;
+}
+
+.inline-l1, .inline-l2 {
+    display: inline-block;
+}
+
+#compareButton {
+    background-color: rgb(166, 164, 164);
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+.temp-label {
+    text-align: right;
+}
+
+#noCityWarning1, #noCityWarning2, #noStateWarning1, #noStateWarning2, #noCityTxt1, #noCityTxt2 {
+    color: red;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    height: 50%;
+}
+
+td {
+    text-align: center;
+    border: 2px solid rgb(161, 161, 161);
+    padding: 7px;
+}
+
+.tableheader {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(44, 55, 82);
+    width: 10%;
+    height: 30%;
+}
+
+.row-odd {
+    background-color: white;
+}
+
+.row-even {
+    background-color: rgb(121, 147, 157);
+}
+
+#city1nameheader, #city2nameheader {
+    margin: 0 0 0 310px;
+}
